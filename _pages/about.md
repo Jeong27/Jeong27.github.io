@@ -20,7 +20,7 @@ social: true  # includes social icons at the bottom of the page
 
 I am a Ph.D. student at the [POSTECH Machine Learning Lab](https://ml.postech.ac.kr/), under the guidance of Prof. [Dongwoo Kim](https://dongwookim-ml.github.io/), within the [Department of Computer Science Engineering](https://cse.postech.ac.kr/) at [POSTECH](https://postech.ac.kr/eng/).
 
-My research interest lies in various aspects of machine learning and computer vision including, but not limited to, active learning, domain adaptation, debiasing and its applications.
+My research interest lies in various aspects of machine learning, but not limited to, active learning, domain adaptation, debiasing and its applications.
 I recently interested in using active learning to address challenges like data shortages, spurious correlations, and data imbalances.
 <!-- For detailed information on my research interests, please see [my post](https://sehyun03.github.io/blog/2023/research-interest/). -->
 
