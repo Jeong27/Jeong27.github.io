@@ -134,7 +134,7 @@ collections:
     output: true
     permalink: /news/:path/
   projects:
-    output: true
+    output: false
     permalink: /projects/:path/
   education:
     defaults:
@@ -144,16 +144,16 @@ collections:
   experience:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /experience/:path/
   honors:
     defaults:
       layout: post
-    output: true
+    output: false
     permalink: /honors/:path/
 
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 5 # leave blank to include all the news in the `_news` folder
+news_limit: 2 # leave blank to include all the news in the `_news` folder
 education_limit: 5
 
 # -----------------------------------------------------------------------------
@@ -239,8 +239,8 @@ display_tags: ['research', 'formatting', 'images', 'links', 'math', 'code'] # th
 
 scholar:
 
-  last_name: Hwang
-  first_name: [Sehyun, H.]
+  last_name: Park
+  first_name: [Moonjeong, P.]
 
   style: apa
   locale: en
