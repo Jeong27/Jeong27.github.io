@@ -1,9 +1,10 @@
 ---
 layout: post
-start_end: "Mar, 2024 - Present"
+start_end: "March, 2022 - Present"
 inline: true
 ---
 
-[University of Tübingen](https://uni-tuebingen.de/en/), Tübingen, Germany \
-*Visiting Researcher*
-- Mentor: Prof. Seongjoon Oh
+[Machine Learning Lab](https://ml.postech.ac.kr/) at [POSTECH](https://postech.ac.kr/), Pohang, South Korea \
+*Ph.D. Student*
+- Advisor: [Prof. Dongwoo Kim](https://dongwookim-ml.github.io/)
+- Participate in research projects about graph neural network.

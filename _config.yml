@@ -72,7 +72,7 @@ github_username: Jeong27 # your GitHub user name
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 linkedin_username: moonjeong-park-97ba85258 # your LinkedIn user name
-scholar_userid: #GW4KY8IAAAAJ # your Google Scholar ID
+scholar_userid: EY_FX_sAAAAJ # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
@@ -141,19 +141,19 @@ collections:
       layout: post
     output: true
     permalink: /education/:path/
-  # experience:
-  #   defaults:
-  #     layout: post
-  #   output: false
-  #   permalink: /experience/:path/
-  # honors:
-  #   defaults:
-  #     layout: post
-  #   output: false
-  #   permalink: /honors/:path/
+  experience:
+    defaults:
+      layout: post
+    output: false
+    permalink: /experience/:path/
+  honors:
+    defaults:
+      layout: post
+    output: false
+    permalink: /honors/:path/
 
 news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-news_limit: 2 # leave blank to include all the news in the `_news` folder
+news_limit: 5 # leave blank to include all the news in the `_news` folder
 education_limit: 5
 
 # -----------------------------------------------------------------------------

@@ -6,7 +6,7 @@ subtitle:
 
 profile:
   align: right
-  image: profile_moonjeongv2.jpg
+  image: profile_cand_icml_v3.jpeg
   image_cicular: false # crops the image to make it circular
   address: > 
 
@@ -22,9 +22,6 @@ I am a Ph.D. student at the [POSTECH Machine Learning Lab](https://ml.postech.ac
 
 My research interest lies in various aspects of machine learning, but not limited to, Graph Neural Network and Dynamical systems.
 I recently interested in interpreting deep learning network architectures and training methods through the lens of Ordinary Differential Equations (ODEs), and develop innovative and efficient neural network designs by integrating advanced mathematical principles with practical applications.
-<!-- My research interest lies in various aspects of machine learning, but not limited to, active learning, domain adaptation, debiasing and its applications. -->
-<!-- I recently interested in using active learning to address challenges like data shortages, spurious correlations, and data imbalances. -->
-<!-- For detailed information on my research interests, please see [my post](https://sehyun03.github.io/blog/2023/research-interest/). -->
 
 I'm actively seeking opportunities for meaningful collaborations and internships.
 If you find my work interesting or have any questions, please don't hesitate to reach out.
