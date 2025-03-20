@@ -1,10 +1,10 @@
 ---
 layout: post
-start_end: "March, 2022 - Present"
+start_end: "June, 2018 - January, 2019"
 inline: true
 ---
 
-[Machine Learning Lab](https://ml.postech.ac.kr/) at [POSTECH](https://postech.ac.kr/), Pohang, South Korea \
-*Ph.D. Student*
-- Advisor: [Prof. Dongwoo Kim](https://dongwookim-ml.github.io/)
-- Participate in research projects about graph neural network.
+[Data Mining Lab](https://datalab.snu.ac.kr/en) at [Seoul National University](https://www.snu.ac.kr/), Seoul, South Korea \
+*Research Intern*
+- Mentor: [Prof. U Kang](https://datalab.snu.ac.kr/~ukang/) and [Prof. Sael Lee](https://leesael.github.io/)
+- Participate in research projects about sparse tucker factorization for large-scale tensor
