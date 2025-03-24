@@ -3,5 +3,5 @@ layout: post
 inline: true
 ---
 
-**BK21 Best Paper Award, POSTECH AIGS (2024)**
-- Excellence Award \- *Mitigating oversmoothing through reverse process of gnns for heterophilic graphs* (ICML2024)
+**Best Paper Award, IEEE BigComp (2021)**
+- Best Paper Award, 1st Place \- *VeST: Very Sparse Tucker Factorization of Large-Scale Tensors* (BigComp2021)
