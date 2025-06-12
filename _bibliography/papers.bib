@@ -13,16 +13,28 @@
 @string{Supercomp = {The Journal of Supercomputing,}}
 @string{ISIT = {IEEE International Symposium on Information Theory (<b>ISIT</b>),}}
 
-@inproceeding{park2024taming,
+@inproceeding{park2025fallacy,
   title={The Oversmoothing Fallacy: A Misguided Narrative in GNN Research},
   author={MoonJeong Park and Sunghyun Choi and Jaeseung Heo and Eunhyeok Park and Dongwoo Kim},
   abstract={Oversmoothing has been recognized as a main obstacle to building deep Graph Neural Networks (GNNs), limiting the performance. This position paper argues that the influence of oversmoothing has been overstated and advocates for a further exploration of deep GNN architectures. Given the three core operations of GNNs, aggregation, linear transformation, and non-linear activation, we show that prior studies have mistakenly confused oversmoothing with the vanishing gradient, caused by transformation and activation rather than aggregation. Our finding challenges prior beliefs about oversmoothing being unique to GNNs. Furthermore, we demonstrate that classical solutions such as skip connections and normalization enable the successful stacking of deep GNN layers without performance degradation. Our results clarify misconceptions about oversmoothing and shed new light on the potential of deep GNNs.},
   booktitle=arxiv,
-  year={2024},
+  year={2025},
   abbr={arXiv},
   arxiv={2506.04653},
   selected={true},
   img_path={assets/img/park2025fallacy.png},
+}
+
+@inproceeding{heo2025influence,
+  title={Influence Functions for Edge Edits in Non-Convex Graph Neural Networks},
+  author={Jaeseung Heo and Kyeongheung Yun and Seokwon Yoon and MoonJeong Park and Jungseul Ok and Dongwoo Kim},
+  abstract={Understanding how individual edges influence the behavior of graph neural networks (GNNs) is essential for improving their interpretability and robustness. Graph influence functions have emerged as promising tools to efficiently estimate the effects of edge deletions without retraining. However, existing influence prediction methods rely on strict convexity assumptions, exclusively consider the influence of edge deletions while disregarding edge insertions, and fail to capture changes in message propagation caused by these modifications. In this work, we propose a proximal Bregman response function specifically tailored for GNNs, relaxing the convexity requirement and enabling accurate influence prediction for standard neural network architectures. Furthermore, our method explicitly accounts for message propagation effects and extends influence prediction to both edge deletions and insertions in a principled way. Experiments with real-world datasets demonstrate accurate influence predictions for different characteristics of GNNs. We further demonstrate that the influence function is versatile in applications such as graph rewiring and adversarial attacks.},
+  booktitle=arxiv,
+  year={2025},
+  abbr={arXiv},
+  arxiv={2506.04694},
+  selected={true},
+  img_path={assets/img/heo2025influence.png},
 }
 
 
