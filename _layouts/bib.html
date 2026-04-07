@@ -43,7 +43,7 @@
 
           {%- for author in entry.author_array limit: author_array_limit -%}
             {%- assign author_is_self = false -%}
-            {%- if author.first == "MoonJeong" and author.last == "Park" %}
+            {%- if author.first == "MoonJeong" and author.last contains "Park" %}
               {%- assign author_is_self = true -%}
             {%- endif -%}
             {%- assign coauthor_url = nil -%}
@@ -58,14 +58,14 @@
             
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
-                <u>{{author.first}} {{author.last}}</u>
+                <em>{{author.first}} {{author.last}}</em>
               {%- else -%}
                 {{author.first}} {{author.last}}
               {%- endif -%}
             {%- else -%}
               {%- unless forloop.last -%}
                 {% if author_is_self %}
-                  <u>{{author.first}} {{author.last}}</u>,&nbsp;
+                  <em>{{author.first}} {{author.last}}</em>,&nbsp;
                 {%- else -%}
                   {% if coauthor_url -%}
                     <a sstyle="text-decoration: none" href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>,&nbsp;
@@ -76,7 +76,7 @@
               {%- else -%}
                 {%- if author_array_limit == author_array_size %} and {% endif %}
                 {% if author_is_self -%}
-                  <u>{{author.first}} {{author.last}}</u>
+                  <em>{{author.first}} {{author.last}}</em>
                 {% else -%}
                   {%- if coauthor_url -%}
                     <a sstyle="text-decoration: none" href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
