@@ -55,7 +55,7 @@
                 {%- endif -%}
               {%- endfor -%}
             {%- endif -%}
-            
+
             {%- if forloop.length == 1 -%}
               {%- if author_is_self %}
                 <em>{{author.first}} {{author.last}}</em>
@@ -121,9 +121,6 @@
             >{{more_authors_hide}}</span>
           {% endif %}
 
-          {% if entry.equal_contrib -%}
-            {{" (*equal contribution)"}}
-          {%- endif %}
           
           </div>
 
