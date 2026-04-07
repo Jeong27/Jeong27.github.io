@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2023-02-12 07:59:00-0400
+date: 2026-03-25 07:59:00-0400
 inline: true
 ---
 
-📩 A paper about sparse regression for multi-environment dynamic systems is accepted to [AAAI 2023, MLmDS Workshop](https://machinelearning-dynamic.github.io/).
+🇦🇺 Excited to be visiting the [Computational Media Lab](https://cmlab.dev/) at [ANU](https://www.anu.edu.au/) as a visiting researcher (March – June 2026)

@@ -3,17 +3,56 @@
 @string{CVPR = {{IEEE/CVF} Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>),}}
 @string{ECCV = {European Conference on Computer Vision (<b>ECCV</b>),}}
 @string{ICCV = {International Conference on Computer Vision (<b>ICCV</b>),}}
-@string{NEURIPS = {Conference on Neural Information Processing Systems (<b>NeurIPS</b>),}}
+@string{NeurIPS = {Conference on Neural Information Processing Systems (<b>NeurIPS</b>),}}
 @string{IJCV = {International Journal of Computer Vision (<b>IJCV</b>),}}
 @string{ICRA = {IEEE International Conference on Robotics and Automation (<b>ICRA</b>),}}
 @string{ICML = {International Conference on Machine Learning (<b>ICML</b>),}}
+@string{AAAI = {AAAI Conference on Artificial Intelligence (<b>AAAI</b>),}}
 @string{AAAIw = {AAAI Conference on Artificial Intelligence, Workshop on When Machine Learning meets Dynamical Systems: Theory and Applications (<b>AAAIw</b>),}}
 @string{arXiv = {arXiv preprint,}}
 @string{BigComp = {IEEE International Conference on Big Data and Smart Computing (<b>BigComp</b>),}}
 @string{Supercomp = {The Journal of Supercomputing,}}
 @string{ISIT = {IEEE International Symposium on Information Theory (<b>ISIT</b>),}}
+@string{EMNLP = {Empirical Methods in Natural Language Processing (<b>EMNLP</b>),}}
 
-@inproceeding{park2025fallacy,
+@misc{park2026trans,
+  title={Transductive Generalization via Optimal Transport and Its Application to Graph Node Classification},
+  author={MoonJeong Park and Seungbeom Lee and Kyungmin Kim and Jaeseung Heo and Seunghyuk Cho and Shouheng Li and Sangdon Park and Dongwoo Kim},
+  abstract={Many existing transductive bounds rely on classical complexity measures that are computationally intractable and often misaligned with empirical behavior. In this work, we establish new representation-based generalization bounds in a distribution-free transductive setting, where learned representations are dependent, and test features are accessible during training. We derive global and class-wise bounds via optimal transport, expressed in terms of Wasserstein distances between encoded feature distributions. We demonstrate that our bounds are efficiently computable and strongly correlate with empirical generalization in graph node classification, improving upon classical complexity measures. Additionally, our analysis reveals how the GNN aggregation process transforms the representation distributions, inducing a trade-off between intra-class concentration and inter-class separation. This yields depth-dependent characterizations that capture the non-monotonic relationship between depth and generalization error observed in practice. The code is available at this https URL.},
+  booktitle=arxiv,
+  year={2026},
+  abbr={arXiv},
+  arxiv={2603.09257},
+  selected={true},
+  code={https://github.com/ml-postech/Transductive-OT-Gen-Bound},
+  img_path={assets/img/park2026trans.png},
+}
+
+@misc{choi2026inplace,
+  title={In-Place Feedback: A New Paradigm for Guiding LLMs in Multi-Turn Reasoning},
+  author={Youngbin Choi and Minjong Lee and Saemi Moon and Seunghyuk Cho and Chaehyeon Chung and MoonJeong Park and Dongwoo Kim},
+  abstract={Large language models (LLMs) are increasingly studied in the context of multi-turn reasoning, where models iteratively refine their outputs based on user-provided feedback. Such settings are crucial for tasks that require complex reasoning, yet existing feedback paradigms often rely on issuing new messages. LLMs struggle to integrate these reliably, leading to inconsistent improvements. In this work, we introduce in-place feedback, a novel interaction paradigm in which users directly edit an LLM's previous response, and the model conditions on this modified response to generate its revision. Empirical evaluations on diverse reasoning-intensive benchmarks reveal that in-place feedback achieves better performance than conventional multi-turn feedback while using 79.1% fewer tokens. Complementary analyses on controlled environments further demonstrate that in-place feedback resolves a core limitation of multi-turn feedback: models often fail to apply feedback precisely to erroneous parts of the response, leaving errors uncorrected and sometimes introducing new mistakes into previously correct content. These findings suggest that in-place feedback offers a more natural and effective mechanism for guiding LLMs in reasoning-intensive tasks.},
+  booktitle=arxiv,
+  year={2026},
+  abbr={arXiv},
+  arxiv={2510.00777},
+  selected={true},
+  img_path={assets/img/choi2026inplace.png},
+}
+
+@misc{yoon2026gflow,
+  title={Training-free Composition of Pre-trained GFlowNets for Multi-Objective Generation},
+  author={Seokwon Yoon and Youngbin Choi and Seunghyuk Cho and Seungbeom Lee and MoonJeong Park and Dongwoo Kim},
+  abstract={Generative Flow Networks (GFlowNets) learn to sample diverse candidates in proportion to a reward function, making them well-suited for scientific discovery, where exploring multiple promising solutions is crucial. Further extending GFlowNets to multi-objective settings has attracted growing interest since real-world applications often involve multiple, conflicting objectives. However, existing approaches require additional training for each set of objectives, limiting their applicability and incurring substantial computational overhead. We propose a training-free mixing policy that composes pre-trained GFlowNets at inference time, enabling rapid adaptation without finetuning or retraining. Importantly, our framework is flexible, capable of handling diverse reward combinations ranging from linear scalarization to complex non-linear logical operators, which are often handled separately in previous literature. We prove that our method exactly recovers the target distribution for linear scalarization and quantify the approximation quality for nonlinear operators through a distortion factor. Experiments on a synthetic 2D grid and real-world molecule-generation tasks demonstrate that our approach achieves performance comparable to baselines that require additional training.},
+  booktitle=arxiv,
+  year={2026},
+  abbr={arXiv},
+  arxiv={2602.21565},
+  selected={true},
+  img_path={assets/img/yoon2026gflow.png},
+}
+
+@misc{park2025fallacy,
   title={The Oversmoothing Fallacy: A Misguided Narrative in GNN Research},
   author={MoonJeong Park and Sunghyun Choi and Jaeseung Heo and Eunhyeok Park and Dongwoo Kim},
   abstract={Oversmoothing has been recognized as a main obstacle to building deep Graph Neural Networks (GNNs), limiting the performance. This position paper argues that the influence of oversmoothing has been overstated and advocates for a further exploration of deep GNN architectures. Given the three core operations of GNNs, aggregation, linear transformation, and non-linear activation, we show that prior studies have mistakenly confused oversmoothing with the vanishing gradient, caused by transformation and activation rather than aggregation. Our finding challenges prior beliefs about oversmoothing being unique to GNNs. Furthermore, we demonstrate that classical solutions such as skip connections and normalization enable the successful stacking of deep GNN layers without performance degradation. Our results clarify misconceptions about oversmoothing and shed new light on the potential of deep GNNs.},
@@ -25,32 +64,7 @@
   img_path={assets/img/park2025fallacy.png},
 }
 
-@inproceeding{heo2025influence,
-  title={Influence Functions for Edge Edits in Non-Convex Graph Neural Networks},
-  author={Jaeseung Heo and Kyeongheung Yun and Seokwon Yoon and MoonJeong Park and Jungseul Ok and Dongwoo Kim},
-  abstract={Understanding how individual edges influence the behavior of graph neural networks (GNNs) is essential for improving their interpretability and robustness. Graph influence functions have emerged as promising tools to efficiently estimate the effects of edge deletions without retraining. However, existing influence prediction methods rely on strict convexity assumptions, exclusively consider the influence of edge deletions while disregarding edge insertions, and fail to capture changes in message propagation caused by these modifications. In this work, we propose a proximal Bregman response function specifically tailored for GNNs, relaxing the convexity requirement and enabling accurate influence prediction for standard neural network architectures. Furthermore, our method explicitly accounts for message propagation effects and extends influence prediction to both edge deletions and insertions in a principled way. Experiments with real-world datasets demonstrate accurate influence predictions for different characteristics of GNNs. We further demonstrate that the influence function is versatile in applications such as graph rewiring and adversarial attacks.},
-  booktitle=arxiv,
-  year={2025},
-  abbr={arXiv},
-  arxiv={2506.04694},
-  selected={true},
-  img_path={assets/img/heo2025influence.png},
-}
-
-
-@inproceeding{choi2025copl,
-  title={CoPL: Collaborative Preference Learning for Personalizing LLMs},
-  author={Youngbin Choi and Seunghyuk Cho and Minjong Lee and MoonJeong Park and Yesong Ko and Jungseul Ok and Dongwoo Kim},
-  abstract={Personalizing large language models (LLMs) is important for aligning outputs with diverse user preferences, yet existing methods struggle with flexibility and generalization. We propose CoPL (Collaborative Preference Learning), a graph-based collaborative filtering framework that models user-response relationships to enhance preference estimation, particularly in sparse annotation settings. By integrating a mixture of LoRA experts, CoPL efficiently fine-tunes LLMs while dynamically balancing shared and user-specific preferences. Additionally, an optimization-free adaptation strategy enables generalization to unseen users without fine-tuning. Experiments on UltraFeedback-P demonstrate that CoPL outperforms existing personalized reward models, effectively capturing both common and controversial preferences, making it a scalable solution for personalized LLM alignment.},
-  booktitle=arxiv,
-  year={2025},
-  abbr={arXiv},
-  arxiv={2503.01658},
-  selected={true},
-  img_path={assets/img/choi2025copl.png},
-}
-
-@inproceeding{park2024taming,
+@misc{park2024taming,
   title={Taming Gradient Oversmoothing and Expansion in Graph Neural Networks},
   author={MoonJeong Park and Dongwoo Kim},
   abstract={Oversmoothing has been claimed as a primary bottleneck for multi-layered graph neural networks (GNNs). Multiple analyses have examined how and why oversmoothing occurs. However, none of the prior work addressed how optimization is performed under the oversmoothing regime. In this work, we show the presence of $\textit{gradient oversmoothing}$ preventing optimization during training. We further analyze that GNNs with residual connections, a well-known solution to help gradient flow in deep architecture, introduce $\textit{gradient expansion}$, a phenomenon of the gradient explosion in diverse directions. Therefore, adding residual connections cannot be a solution for making a GNN deep. Our analysis reveals that constraining the Lipschitz bound of each layer can neutralize the gradient expansion. To this end, we provide a simple yet effective normalization method to prevent the gradient expansion. An empirical study shows that the residual GNNs with hundreds of layers can be efficiently trained with the proposed normalization without compromising performance. Additional studies show that the empirical observations corroborate our theoretical analysis.},
@@ -62,16 +76,44 @@
   img_path={assets/img/park2024taming.png},
 }
 
-@inproceeding{heo2024posterior,
+@inproceedings{heo2024posterior,
   title={Posterior Label Smoothing for Node Classification},
   author={Jaeseung Heo and MoonJeong Park and Dongwoo Kim},
   abstract={Soft labels can improve the generalization of a neural network classifier in many domains, such as image classification. Despite its success, the current literature has overlooked the efficiency of label smoothing in node classification with graph-structured data. In this work, we propose a simple yet effective label smoothing for the transductive node classification task. We design the soft label to encapsulate the local context of the target node through the neighborhood label distribution. We apply the smoothing method for seven baseline models to show its effectiveness. The label smoothing methods improve the classification accuracy in 10 node classification datasets in most cases. In the following analysis, we find that incorporating global label statistics in posterior computation is the key to the success of label smoothing. Further investigation reveals that the soft labels mitigate overfitting during training, leading to better generalization performance.},
-  booktitle=arxiv,
-  year={2024},
-  abbr={arXiv},
+  booktitle=AAAI,
+  year={2026},
+  abbr={AAAI},
   arxiv={2406.00410},
   selected={true},
   img_path={assets/img/heo2024posterior.png},
+  code={https://github.com/ml-postech/PosteL},
+  additional_info={Oral},
+}
+
+@inproceedings{heo2025influence,
+  title={Influence Functions for Edge Edits in Non-Convex Graph Neural Networks},
+  author={Jaeseung Heo and Kyeongheung Yun and Seokwon Yoon and MoonJeong Park and Jungseul Ok and Dongwoo Kim},
+  abstract={Understanding how individual edges influence the behavior of graph neural networks (GNNs) is essential for improving their interpretability and robustness. Graph influence functions have emerged as promising tools to efficiently estimate the effects of edge deletions without retraining. However, existing influence prediction methods rely on strict convexity assumptions, exclusively consider the influence of edge deletions while disregarding edge insertions, and fail to capture changes in message propagation caused by these modifications. In this work, we propose a proximal Bregman response function specifically tailored for GNNs, relaxing the convexity requirement and enabling accurate influence prediction for standard neural network architectures. Furthermore, our method explicitly accounts for message propagation effects and extends influence prediction to both edge deletions and insertions in a principled way. Experiments with real-world datasets demonstrate accurate influence predictions for different characteristics of GNNs. We further demonstrate that the influence function is versatile in applications such as graph rewiring and adversarial attacks.},
+  booktitle=NeurIPS,
+  year={2025},
+  abbr={NeurIPS},
+  arxiv={2506.04694},
+  selected={true},
+  code={https://github.com/ml-postech/influence-function-for-edge-edit},
+  img_path={assets/img/heo2025influence.png},
+}
+
+@inproceedings{choi2025copl,
+  title={CoPL: Collaborative Preference Learning for Personalizing LLMs},
+  author={Youngbin Choi and Seunghyuk Cho and Minjong Lee and MoonJeong Park and Yesong Ko and Jungseul Ok and Dongwoo Kim},
+  abstract={Personalizing large language models (LLMs) is important for aligning outputs with diverse user preferences, yet existing methods struggle with flexibility and generalization. We propose CoPL (Collaborative Preference Learning), a graph-based collaborative filtering framework that models user-response relationships to enhance preference estimation, particularly in sparse annotation settings. By integrating a mixture of LoRA experts, CoPL efficiently fine-tunes LLMs while dynamically balancing shared and user-specific preferences. Additionally, an optimization-free adaptation strategy enables generalization to unseen users without fine-tuning. Experiments on UltraFeedback-P demonstrate that CoPL outperforms existing personalized reward models, effectively capturing both common and controversial preferences, making it a scalable solution for personalized LLM alignment.},
+  booktitle=EMNLP,
+  year={2025},
+  abbr={EMNLP},
+  arxiv={2503.01658},
+  selected={true},
+  code={https://github.com/ml-postech/CoPL},
+  img_path={assets/img/choi2025copl.png},
 }
 
 @inproceedings{park2024mitigating,
