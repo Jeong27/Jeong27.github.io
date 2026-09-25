@@ -7,6 +7,11 @@
 		input = input.gsub(/^.*#{keyword}.*$\n/, '')
 	  end
 
+	  # The venue @string values carry display markup and a trailing comma for
+	  # the periodical line, neither of which belongs in copyable BibTeX.
+	  input = input.gsub(/<[^>]+>/, '')
+	  input = input.gsub(/,[ \t]*\}(,?)[ \t]*$/, '}\1')
+
       return input
     end
   end
